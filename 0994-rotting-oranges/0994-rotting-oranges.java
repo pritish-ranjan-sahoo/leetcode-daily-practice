@@ -3,7 +3,7 @@ class Solution {
         int src;
         int dest;
         int time;
-
+ 
         Node(int s, int d, int t) {
             this.src = s;
             this.dest = d;
@@ -42,34 +42,31 @@ class Solution {
 
         while (!q.isEmpty()) {
             Node first = q.remove();
+            maxTime = Math.max(maxTime, first.time);
 
             // check 4-Direction
             // Top
             if (first.src != 0 && grid[first.src - 1][first.dest] == 1) {
                 grid[first.src - 1][first.dest] = 2;
                 q.add(new Node(first.src - 1, first.dest, first.time+1));
-                maxTime = Math.max(maxTime, first.time+1);
             }
 
             // bottom
             if (first.src != m && grid[first.src + 1][first.dest] == 1) {
                 grid[first.src + 1][first.dest] = 2;
                 q.add(new Node(first.src + 1, first.dest, first.time+1));
-                maxTime = Math.max(maxTime, first.time+1);
             }
 
             // left
             if (first.dest != 0 && grid[first.src][first.dest - 1] == 1) {
                 grid[first.src][first.dest - 1] = 2;
                 q.add(new Node(first.src, first.dest - 1, first.time+1));
-                maxTime = Math.max(maxTime, first.time+1);
             }
 
             // right
             if (first.dest != n && grid[first.src][first.dest + 1] == 1) {
                 grid[first.src][first.dest + 1] = 2;
                 q.add(new Node(first.src, first.dest + 1, first.time+1));
-                maxTime = Math.max(maxTime, first.time+1);
             }
 
         }
