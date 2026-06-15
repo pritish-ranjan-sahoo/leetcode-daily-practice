@@ -13,7 +13,10 @@ class Solution {
         Queue<Node> q = new ArrayDeque<>();
         int m = grid.length - 1;
         int n = grid[0].length - 1;
+
+        grid[source.src][source.dest] = '2'; 
         q.add(source);
+        
         while(!q.isEmpty()) {
             Node first = q.remove();
 
