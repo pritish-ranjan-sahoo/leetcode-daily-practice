@@ -4,10 +4,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0416-partition-equal-subset-sum](https://github.com/pritish-ranjan-sahoo/leetcode-daily-practice/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/pritish-ranjan-sahoo/leetcode-daily-practice/tree/master/0494-target-sum) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0416-partition-equal-subset-sum](https://github.com/pritish-ranjan-sahoo/leetcode-daily-practice/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/pritish-ranjan-sahoo/leetcode-daily-practice/tree/master/0494-target-sum) |
 ## Backtracking
 |  |
